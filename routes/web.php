@@ -8,6 +8,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/admin/user-list', function () {
+    return view('admin.userlist');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
